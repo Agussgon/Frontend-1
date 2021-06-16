@@ -1,0 +1,30 @@
+
+#imagen{image-orientation:center ;
+        width: 120px;; 
+        height: 147px; 
+        margin-left: 670px; 
+        filter: sepia(20%);}
+
+h1{ background-color:hsl(4, 12%, 55%) ;
+     text-align-last:inherit;
+     text-indent: 230px;
+    }
+ 
+h2{margin-left: 234px ;
+   background-color:#9A817F;
+   ;background-position: center;
+       }
+ 
+h3{margin-left: 601px;}      
+ ul{ margin-left: 274px;}
+
+
+
+ .logoredes{width: 20px;
+    height: 20px ;}
+
+ .negritacursiva{font-weight: bold;
+                 font-style:italic;}   
+ .negrita{font-weight: bold;}
+
+ 
