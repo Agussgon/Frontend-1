@@ -1,3 +1,11 @@
+header{
+   
+   background-image: url("../img/fondoimagen.jpg");
+   background-position: center -50px;
+   background-attachment: fixed; 
+   height: 100px;
+}  
+
 
 #imagen{image-orientation:center ;
         width: 120px;; 
