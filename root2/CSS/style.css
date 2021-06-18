@@ -3,15 +3,16 @@ header{
    background-image: url("../img/fondoimagen.jpg");
    background-position: center -50px;
    background-attachment: fixed; 
-   height: 100px;
+   height: 250px;
 }  
 
 
-#imagen{image-orientation:center ;
-        width: 120px;; 
-        height: 147px; 
-        margin-left: 670px; 
-        filter: sepia(20%);}
+#imagen{image-orientation:0grad;
+        width: 190x;; 
+        height: 220px; 
+        margin-left: 20px; 
+        filter: sepia(20%);
+        float:left;}
 
 h1{ background-color:hsl(4, 12%, 55%) ;
      text-align-last:inherit;
@@ -26,7 +27,8 @@ h2{margin-left: 234px ;
 h3{margin-left: 601px;}      
  ul{ margin-left: 274px;}
 
-
+ body{background-color: #faf0e6;}
+ 
 
  .logoredes{width: 20px;
     height: 20px ;}
