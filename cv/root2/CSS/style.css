@@ -8,7 +8,6 @@ header{
    
    background-image: url("../img/fondoimagen.jpg");
    background-position:center -50px;
-   ; 
    height: 250px;
 }  
 
@@ -21,8 +20,8 @@ h1{ background-color:#009090;
 h2{margin-left: 234px ;
    background-color:
    #67b7b0;
-   ;background-position: center;
-   padding-left: 2%;                              }
+   background-position: center;
+   padding-left: 2%;        }
  
 h3{margin-left: 601px;}      
  ul{ margin-left: 274px;}
@@ -38,7 +37,7 @@ footer{margin-left:235px;}
    margin-left: 20px; 
    filter: sepia(20%);
    float:left;
-             ;          }
+                  }
              
  .centrar{ text-align: center; 
 
