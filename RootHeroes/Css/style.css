@@ -1,0 +1,104 @@
+body{color:#000000;
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
+
+/*descuentos 20%*/
+#verde{background-color:#1CD1B0; width:auto; height:38px;}
+
+/*heroes y footer*/
+.azul{background-color:#00669F; }
+#fijo{ position:relative; width:auto;height:101px; top:0px;}
+
+
+/*cual es la diferencia entre content y borderbox, el útimo es el q mas se usa*/
+
+#divpadre{
+    position:relative; /*le ponemos esa psoicion para q las cartas se muevan en relacion a este*/
+    display:flex;
+    justify-content:space-between;
+    box-sizing:border-box;
+
+} /*para q las tarjetas se muevan en relacion a esto*/ 
+
+.cajabatman1{
+background-color:#F3F3F3;
+width:330px;
+height:600px;
+margin: 100px 50px;
+padding: 10px 16px; /*espacio entre el borde y el contenido*/
+/*border: dashed 3px #000000 ;*/
+box-sizing:border-box; /*tiene en cuenta la totalidad desde el contenido al margen*/
+position:absolute;
+border-radius: 5%;
+
+}
+
+.fondo{ top:0px; padding:0px;}
+
+.fotoperfil{
+padding-bottom:90%;
+padding-left: 30%;
+position:absolute;
+top:20%;
+z-index:10;
+
+;}
+
+.like{
+    left: 40px;
+    top:50px;
+    z-index:10;
+    position:absolute;}  
+
+
+    .tdescriptivo{text-align: center;
+        padding: 40% 0px 20px ;
+    position:absolute;}   
+
+.titulo{text-align:center;
+padding: 25% 40% ;
+position:absolute;} 
+
+p button{ text-align:center;bottom: 60px;left:35%;
+position:absolute;}
+
+
+.cajaharley{
+background-color:#F3F3F3;
+width:330px;
+height:600px;
+padding: 10px 16px; /*espacio entre el borde y el contenido*/
+/*border: dashed 3px #000000 ;*/
+box-sizing:border-box;
+position:absolute; 
+left:35%;
+top:40%
+: 30% ;
+margin: 100px 50px;
+border-radius: 5%;
+ /*  posicion* si pongo sticky es para que quede fijo al hacer scroll , puede ser absolute o relative tambien*/
+;
+
+}
+.cajabatman2{
+    background-color:#F3F3F3;
+    width:330px;
+    height:600px;
+    margin: 100px 50px;
+    padding: 10px 16px; /*espacio entre el borde y el contenido*/
+    /*border: dashed 3px #000000 ;*/
+    box-sizing:border-box;
+    position:absolute; 
+    top:20%;
+    left:70%;
+    border-radius: 5%;   }
+
+footer{
+height:51px;
+width:100%;
+position:absolute;
+bottom:0px;
+margin:0px;
+}

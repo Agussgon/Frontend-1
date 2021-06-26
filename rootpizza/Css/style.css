@@ -1,0 +1,22 @@
+
+.barradenavegación{background-color:#000000;
+display:flex;}
+
+
+
+.logo{ display:flex; 
+    flex-wrap:wrap; /*controlar donde se apilan los elementos*/
+
+}
+.logohijo1{flex-grow:0.4 ; 
+
+}
+
+.logohijo2{ flex-grow:0,6;}
+
+
+.navegacion div{ display:flex } /*barra de navegacion*/
+
+
+
+
