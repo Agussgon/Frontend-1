@@ -1,12 +1,17 @@
 
+/*header*/
 .barradenavegación{background-color:#000000;
-display:flex;}
+display:flex;
+justify-content: space-between;
+}
 
 
 
-.logo{ display:flex; 
-    flex-wrap:wrap; /*controlar donde se apilan los elementos*/
-
+.logomarca{ display:flex; 
+    flex-direction:row;
+    justify-content: flex-start;
+    flex-wrap:wrap; /*respetar el ancho de los elementos*/ 
+    align-items: center;
 }
 .logohijo1{flex-grow:0.4 ; 
 
@@ -15,8 +20,27 @@ display:flex;}
 .logohijo2{ flex-grow:0,6;}
 
 
-.navegacion div{ display:flex } /*barra de navegacion*/
+.menunavegacion{ display:flex;
+    flex-grow:0.5;
+color:white;
+justify-content:center;
+align-items: center;} /*barra de navegacion*/
 
+/*main*/
+
+h2{color:red;}
+#comprando{color:white;}/*titulo de otro color*/
+
+.principal{ display:flex;
+    justify-content:center;
+    align-content:center;
+
+}
+.partedelivery{ flex-wrap:wrap;
+    flex-grow:0.5;
+}
+.partemaspedidas{flex-wrap:wrap;
+    flex-grow:0.5;}
 
 
 

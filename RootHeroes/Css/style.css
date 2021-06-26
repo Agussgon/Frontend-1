@@ -5,19 +5,20 @@ body{color:#000000;
 }
 
 /*descuentos 20%*/
-#verde{background-color:#1CD1B0; width:auto; height:38px;}
+#verde{background-color:#1CD1B0; width:auto; height:40px; position:relative;}
 
 /*heroes y footer*/
 .azul{background-color:#00669F; }
-#fijo{ position:relative; width:auto;height:101px; top:0px;}
+#tituloprincipal{ position:relative; width:auto;height:101px; }
 
 
 /*cual es la diferencia entre content y borderbox, el útimo es el q mas se usa*/
 
 #divpadre{
     position:relative; /*le ponemos esa psoicion para q las cartas se muevan en relacion a este*/
-    display:flex;
+    display:flex; /*este es el flex-container*/
     justify-content:space-between;
+    flex-wrap:wrap; /*respetar el ancho definido por cada elemento*/
     box-sizing:border-box;
 
 } /*para q las tarjetas se muevan en relacion a esto*/ 
@@ -32,19 +33,20 @@ padding: 10px 16px; /*espacio entre el borde y el contenido*/
 box-sizing:border-box; /*tiene en cuenta la totalidad desde el contenido al margen*/
 position:absolute;
 border-radius: 5%;
+box-shadow: gray 300px;/*falta algo aca no funciona */ 
 
 }
 
 .fondo{ top:0px; padding:0px;}
 
 .fotoperfil{
-padding-bottom:90%;
-padding-left: 30%;
+border-radius: 50%;
 position:absolute;
 top:20%;
 z-index:10;
-
-;}
+bottom:90%;
+left:30%;
+}
 
 .like{
     left: 40px;
@@ -53,8 +55,8 @@ z-index:10;
     position:absolute;}  
 
 
-    .tdescriptivo{text-align: center;
-        padding: 40% 0px 20px ;
+ .tdescriptivo{text-align: center;
+    padding: 40% 0px 20px ;
     position:absolute;}   
 
 .titulo{text-align:center;
@@ -74,12 +76,11 @@ padding: 10px 16px; /*espacio entre el borde y el contenido*/
 box-sizing:border-box;
 position:absolute; 
 left:35%;
-top:40%
-: 30% ;
+top:40%;
 margin: 100px 50px;
 border-radius: 5%;
  /*  posicion* si pongo sticky es para que quede fijo al hacer scroll , puede ser absolute o relative tambien*/
-;
+
 
 }
 .cajabatman2{
@@ -93,12 +94,10 @@ border-radius: 5%;
     position:absolute; 
     top:20%;
     left:70%;
-    border-radius: 5%;   }
+    border-radius:5%;   }
 
 footer{
 height:51px;
 width:100%;
 position:absolute;
-bottom:0px;
-margin:0px;
-}
+bottom:-300px;}
