@@ -6,8 +6,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="Css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+
 
 </head>
+
+<body id="contenedor">
 
 <header  class="barradenavegación">
  <div class="logomarca">
@@ -18,50 +22,54 @@
 
  <div class="menunavegacion">
      <!---<nav> </nav>  y dentro las listas-->
-     <div>Home </div>
-     <div>Ranking </div>
+     <div><a href="http://127.0.0.1:5500/Frontend-1/rootpizza/index.html">Home</a></div>
+     <div><a href="https://lamejorpizzeria.com/ranking/">Ranking</a> </div>
      <div>Promoción </div>
      <div>Contacto </div> 
  </div>  
 
 </header>
 
+<section>
 <main class="principal">
 
-<div class="partedelivery"><img src='img/delivery.png' alt="Delivery">
-     <h2>Envio gratis</h2><h2 id="comprando">comprando</h2> <h2>dos pizzas</h2>  
+<div class="partedelivery">
+    <img src="img/delivery.png" alt="delivery">
+    <div class="textodelivery"> <h2>Envio gratis </h2><h2 id="comprando"> comprando </h2> <h2> dos pizzas</h2>  </div>
 </div >
 
 <div  class="partemaspedidas">
 <h2>Podio de pizzas</h2>
 <h3>Pizzas top</h3>
-<ol>
-    <li>Muzzarella</li>
+<div class="toppizzas">
+    <ol>
+   <li>Muzzarella</li>
     <li>Hawaiana</li>
     <li>Muzzarella J&Morrones</li>
     <li>Fugazzeta</li>
     <li>Calabresa</li>
 </ol>
-<img src='img/PizzaFalling.png' alt="pizzas">
+<img src='img/PizzaFalling.png' alt="pizzas" class="decoraciontop">
+</div> 
 </div>
 
 </main>
+</section>
 
+<footer class="pie">
 
-<footer>
-
- <div><nav>
- <ul type=none>
- <li>Home</li>
- <li>Ranking</li>
+ <div class="menufooter">
+ <ul type=none class="listasmenu">
+ <li><a href="http://127.0.0.1:5500/Frontend-1/rootpizza/index.html">Home</a></li>
+ <li><a href="https://lamejorpizzeria.com/ranking/">Ranking</a></li>
  <li>Promoción</li>
  <li>Contacto</li>    
-</ul></nav> </div>
+</ul> </div>
 
-<div> 
+<div class="logofooter"> 
 <div class="logohijo1"><img src="img/pizza.png"></div>
  <div class="logohijo2"><img src="img/Pizza&Front.png"></div>
 </div> 
 </footer>
-
+</body>
 </html>

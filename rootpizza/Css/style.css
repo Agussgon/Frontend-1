@@ -1,9 +1,26 @@
 
-/*header*/
-.barradenavegación{background-color:#000000;
+
+
+*{font-family: 'Roboto', sans-serif;}
+/*body no */
+#contenedor{
+background-color: #E5E5E5;
 display:flex;
-justify-content: space-between;
-}
+flex-direction: column;
+justify-content: space-around;}
+
+
+
+
+/*header*/
+.barradenavegación{
+    background-color:#222222;
+    height:100px;
+    display:flex;
+    justify-content: space-between;
+    border-color: #000000 3px;
+    box-shadow:10px 0px 4px; /*sombra del borde*/
+    }
 
 
 
@@ -19,28 +36,94 @@ justify-content: space-between;
 
 .logohijo2{ flex-grow:0,6;}
 
-
+/*barra de navegacion superior*/
 .menunavegacion{ display:flex;
-    flex-grow:0.5;
+flex-grow:0.2;
 color:white;
-justify-content:center;
-align-items: center;} /*barra de navegacion*/
+justify-content:space-around;
+align-items: center;
+
+} 
 
 /*main*/
 
-h2{color:red;}
-#comprando{color:white;}/*titulo de otro color*/
+h2{color:red;text-align: center;}
+
+#comprando{color:white; padding-left:15px; padding-right: 15px;}/*titulo de otro color*/
+
 
 .principal{ display:flex;
-    justify-content:center;
-    align-content:center;
+    justify-content:space-between;
+    margin-top:40px; 
+    margin-left: 350px;
+    width:1000px; /*importante fijar medidas del contenedor*/
+    height:350px ;
+    background-color: #E5E5E5;
+   
 
 }
-.partedelivery{ flex-wrap:wrap;
+
+.partedelivery{ 
+    flex-wrap:wrap;
     flex-grow:0.5;
+    width: 490px;height:350px ;
+ /* background-image:url('img/delivey.png') */
+   
+   
 }
-.partemaspedidas{flex-wrap:wrap;
-    flex-grow:0.5;}
 
+.textodelivery{ display:flex; /*h2 en linea*/
+justify-content:center;
+position:relative; /*sobre la imagen */
+z-index:10;
+bottom:350px;
+    }
+/*podio de pizzas*/
+
+.partemaspedidas{flex-wrap:wrap;
+    flex-grow:0.5;
+    width: 490px;height:350px ;
+    background-color:#FFFFFF;
+    border-radius: 1%;
+    }
+/*contiene el top más la imagen los titulos quedan fuera*/
+.toppizzas{display:flex;
+    justify-content: space-between;
+    font-size:18px;}
+
+.decoraciontop{position:relative;
+padding-right:74px;}
+
+ol{position:relative;
+    padding-left:51px;}
+h3{padding-left:60px;font-size:22px;position:relative;top:15px;}
+    
+/*footer*/
+.pie{display:flex;
+justify-content: space-between;
+flex-wrap: wrap;
+background-color:#222222;
+position:absolute; 
+bottom:0px;
+width:100%;
+height:150px;
+}
+
+/*modificar menu del footer*/
+.menufooter{color:white;
+ line-height:160%;/*interlineado*/
+ font-size:110%; /*no puedo aplicar space-around con align-items*/
+}
+
+.logofooter{display:flex;
+justify-content:flex-end;
+align-items: center;}
+
+a{text-decoration:none; color: #FFFFFF;}
+
+
+
+
+/*faltan algunas etiquetas y pasar la pizza a PNG , falta acortar el margen inferior de la seccion principal*/
 
 

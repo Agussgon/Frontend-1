@@ -1,15 +1,14 @@
 body{color:#000000;
-    font-family: 'Roboto', sans-serif;
-    
-    
-}
+    font-family: 'Roboto', sans-serif;}
 
 /*descuentos 20%*/
-#verde{background-color:#1CD1B0; width:auto; height:40px; position:relative;}
+#verde{background-color:#1CD1B0; width:auto; height:40px; position:relative;display:flex; align-items:center;
+    padding-left:20px;}
 
 /*heroes y footer*/
 .azul{background-color:#00669F; }
-#tituloprincipal{ position:relative; width:auto;height:101px; }
+#tituloprincipal{ position:relative; width:auto;height:101px;display:flex; align-items:center;
+    padding-left:20px; box-shadow: grey 0px 3px 0px; }
 
 
 /*cual es la diferencia entre content y borderbox, el útimo es el q mas se usa*/
@@ -28,24 +27,27 @@ background-color:#F3F3F3;
 width:330px;
 height:600px;
 margin: 100px 50px;
-padding: 10px 16px; /*espacio entre el borde y el contenido*/
+/*espacio entre el borde y el contenido*/
 /*border: dashed 3px #000000 ;*/
 box-sizing:border-box; /*tiene en cuenta la totalidad desde el contenido al margen*/
 position:absolute;
 border-radius: 5%;
-box-shadow: gray 300px;/*falta algo aca no funciona */ 
-
+border-color: #F3F3F3;
+box-shadow: 0px 1px 0px;
+flex-grow:0.33;
 }
 
 .fondo{ top:0px; padding:0px;}
 
 .fotoperfil{
+    width: auto;
+    height:150px;
 border-radius: 50%;
 position:absolute;
-top:20%;
+top:15%;
 z-index:10;
-bottom:90%;
-left:30%;
+bottom:150%;
+left:25%;
 }
 
 .like{
@@ -55,16 +57,21 @@ left:30%;
     position:absolute;}  
 
 
- .tdescriptivo{text-align: center;
+ .tdescriptivo{font-size:120%;
     padding: 40% 0px 20px ;
     position:absolute;}   
 
-.titulo{text-align:center;
-padding: 25% 40% ;
-position:absolute;} 
+.titulo{ font-size:120%;
+    font-weight: bold;
+    text-transform:uppercase;
+position:absolute;
+left:35%;
+top:40%;
+text-align:center;
+} 
 
-p button{ text-align:center;bottom: 60px;left:35%;
-position:absolute;}
+p button{ text-align:center;bottom: 30px;left:35%;
+position:absolute;font-size:120% ; border-radius:15% ;padding:15px;background-color: #00669F;}
 
 
 .cajaharley{
@@ -79,6 +86,9 @@ left:35%;
 top:40%;
 margin: 100px 50px;
 border-radius: 5%;
+border-color: #F3F3F3;
+box-shadow: 0px 1px 0px;
+flex-grow:0.33;
  /*  posicion* si pongo sticky es para que quede fijo al hacer scroll , puede ser absolute o relative tambien*/
 
 
@@ -94,10 +104,19 @@ border-radius: 5%;
     position:absolute; 
     top:20%;
     left:70%;
-    border-radius:5%;   }
+    border-radius:5%; 
+    border-color: #F3F3F3;
+box-shadow: 0px 1px 0px;
+    flex-grow:0.33;  }
 
 footer{
 height:51px;
 width:100%;
 position:absolute;
-bottom:-300px;}
+bottom:-300px;
+color:#F3F3F3;
+display:flex;
+align-items:center;
+padding-left:20px;}
+
+/*rehacer con y sin flex*/
