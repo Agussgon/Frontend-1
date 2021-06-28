@@ -5,15 +5,17 @@ body {color:#FFFFFF;
 /*ver si puedo traer la fuente roboto de googlefonts */
 font-style:normal; }
 
+
 .ofertas{background-color:#222222;
     display:flex;
     justify-content:space-between;
 }
 
+
 .menugeneral{background-color:#F0A83E;
 }
 
-
+a{text-decoration: none; color:RGB(0,0,0);line-height: 120%;}
 
 .seccion1yp{color:#3C2313;
     text-align:center;}

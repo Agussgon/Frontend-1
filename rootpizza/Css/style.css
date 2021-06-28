@@ -27,8 +27,9 @@ justify-content: space-around;}
 .logomarca{ display:flex; 
     flex-direction:row;
     justify-content: flex-start;
-    flex-wrap:wrap; /*respetar el ancho de los elementos*/ 
+    flex-wrap:wrap; /*respetar el ancho de los elementos y que pueda continuar en caso de tener multiples lineas*/ 
     align-items: center;
+    
 }
 .logohijo1{flex-grow:0.4 ; 
 
@@ -41,7 +42,7 @@ justify-content: space-around;}
 flex-grow:0.2;
 color:white;
 justify-content:space-around;
-align-items: center;
+align-items:center;
 
 } 
 
@@ -124,6 +125,6 @@ a{text-decoration:none; color: #FFFFFF;}
 
 
 
-/*faltan algunas etiquetas y pasar la pizza a PNG , falta acortar el margen inferior de la seccion principal*/
+/*faltan algunas etiquetas y pasar la pizza a PNG ,anclas,  falta acortar el margen inferior de la seccion principal*/
 
 
