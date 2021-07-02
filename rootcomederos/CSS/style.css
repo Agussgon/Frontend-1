@@ -1,33 +1,97 @@
 
-
+/*ver que asa con el ancho del body en general*/
 body {color:#FFFFFF;
-      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-/*ver si puedo traer la fuente roboto de googlefonts */
-font-style:normal; }
+      font-family:; /*ver si puedo traer la fuente roboto de googlefonts */
+      font-style:normal; }
+      
+a{ text-decoration: none; color:RGB(255,255,255);}      
 
+/*header*/
 
 .ofertas{background-color:#222222;
     display:flex;
     justify-content:space-between;
+    
+}
+#tituloheader{flex-grow:0.7;
+text-align: center;}
+
+.monedaidioma{ flex: grow:0.4;;
+text-align: center;
 }
 
 
-.menugeneral{background-color:#F0A83E;
+
+/*segunda parte del header*/
+
+.menusuperior{background-color:#F0A83E;
+    display: flex;
+    flex-direction: row;
+   
+    height: 70px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+   }
+#logoperro{flex-direction: row ; flex-grow:0.5;}
+
+
+#navegadorsuperior{
+flex-grow:0.3;
+display: flex;
+flex-direction: row;
+justify-content:space-around;
 }
 
-a{text-decoration: none; color:RGB(0,0,0);line-height: 120%;}
 
-.seccion1yp{color:#3C2313;
-    text-align:center;}
 
-#seccion-principal{background-image:url(/root/img/comederoorginal.png);
-    background-size:cover;
-    text-align:center; 
-    height:1025px;
+
+
+h1,h2,h3, #seccion-principal p, #seccionproductos {color:#3C2313;
+    text-align:center;} 
+
+/*seccion comedero*/    
+#seccion-principal{
+    height: 600px;
+    width: auto;
+    box-sizing: border-box;
+   
 }
+#imagencomedero{position:relative; 
+z-index:-2 ;
+height:600px ;
+width: 100%;}
 
-#juguetesperrunos{background-color:#fffdf8}
+.textocomedero{ text-align: center;z-index:4; position:relative; left:500px ; bottom:500px ; }
 
-#contacto{background-color:#3C2313;}
 
-.sinsubrayar{text-decoration:"none";} /*no funciona*/
+
+/*seccionproductos*/
+#productos{word-spacing:30px;} /*espaciado */
+#huellita{ width:200px; height:200px;}
+
+
+
+/*juguetes 3div*/
+
+#juguetesperrunos{background-color:#fffdf8;display: flex; flex-direction: row;
+justify-content: space-around;}
+
+.juguete{background-color:#FBFAF6 ;}
+
+
+/*datos*/
+#secciondatos{background-color:#3C2313;display: flex; justify-content: space-between;}
+.listadatos{ display: flex; flex-direction:column; justify-content: space-around;}
+#logodatos{ align-self:center;} /*importante*/
+
+
+/*footer*/
+footer{background-color: #222222;}
+#redessociales{display: flex; flex-direction: row; justify-content:flex-end;}
+
+
+/*logos de redes e idioma del footer?? */
+#redessociales a{text-decoration: none; color:RGB(0,0,0);line-height: 120%;}
+
+

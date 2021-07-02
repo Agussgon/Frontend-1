@@ -4,78 +4,98 @@
             <title>Comederos </title>
             <link rel="stylesheet" href="CSS/style.css">
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+
      </head>
 
  <body>
       <header> 
-      <div class="ofertas">
-      <nav >
-          <span> Grandes ofertas en comederos </span>
-          <span><a href="# ">Español </a> 
-             <a href="#" > Arg$ </a></nav></span> 
-        </div>  
+
+      <div class="ofertas"> 
+    
+          <span id="tituloheader"> Grandes ofertas en comederos </span>
+
+          <div class="monedaidioma"> <a href="# ">Español </a> 
+             <a href="#" > Arg$ </a> </div> 
+      </div>  
            
-    <div class="menugeneral">
-       <nav >
-        <img src="img/logo.jpg" alt="logo perros">   
-      <ul type="none" class="sinsubrayar">
-          <li><i class="fas fa-paw"></i><a href="#" >Categorías</a></li>
-          <li><i class="fas fa-paw"></i> <a href="#" >  Pets  </a></li>
-          <li><i class="fas fa-paw"></i><a href="#" >  Nosotros  </a> </li>
-          <li><i class="fas fa-paw"></i> <a href="#" > Contactanos  </a> </li>
-      </ul> 
-       </nav>
+
+    <div class="menusuperior">
+       
+       <img src="img/logo.jpg" alt="logo perros" id="logoperro"> 
+
+       <nav id="navegadorsuperior"> 
+         <a href="#" > <i class="fas fa-paw" ></i>Categorías</a>
+           <a href="#" > <i class="fas fa-paw" ></i> Pets  </a>
+          <a href="#" ><i class="fas fa-paw"></i>  Nosotros  </a> 
+          <a href="#" > <i class="fas fa-paw"></i> Contactanos </a> 
+       
+      </nav>
       </div>
        
         </header> 
 
-        <h2 class="seccion1yp">¡Es un placer tenerte aqui!</h2>
-  <section id="seccion-principal">
-       <p class="seccion1yp">¡Comederos en descuento!</p>
-       <p><a href="# "> COMEDEROS </a> </p>
-       <br>
-  </section>
+        <section id="seccion-principal">
+        <img src="img/comederoorginal.png" alt="comoderodeperros" id="imagencomedero">  
+      <div class="textocomedero">
+       <h2>¡Es un placer tenerte aqui!</h2>
+       <p>¡Comederos en descuento!</p>
+       <p> <button>COMEDEROS </button> </p>
+       </div>
+       </section>
 
-  <section>
-    <img src="img/huellita original.png" alt="huella" width="200px" height="200px" >
-    <div  class="seccion1yp">
+  <section id="seccionproductos">
+    <img src="img/huellita original.png" alt="huella" id="huellita" >
+    <div >
     <h1  >Productos destacados</h1>
-       <span>comederos</span> <span>accesorios</span> <span>comida</span>
+       <span id="productos">comederos - accesorios - comida</span>
       </div>
 
-  <div id="juguetesperrunos">
 
-    <img src="img/imagen1.png" alt="alimento canino" > 
+  <div id="juguetesperrunos"> 
+
+   
+    <article class="juguete">
+     <img src="img/imagen1.png" alt="alimento canino" > 
       <p>Juguete Churrasquito</p>
-      <p>$150</p>
-    <img src="Img/imagenhuesos.png" alt="huesos" > 
+      <p>$150</p></article>
+
+   <article class="juguete"> <img src="Img/imagenhuesos.png" alt="huesos" > 
       <p>Juguete Huesitos</p>
-      <p>$150</p>
-    <img src="Img/carne.png" alt="churrasquito" > 
+      <p>$150</p></article>
+
+    <article class="juguete"> 
+      <img src="Img/carne.png" alt="churrasquito" > 
       <p>Juguete Churrasquito</p>
-      <p>$150</p>
+      <p>$150</p> </article>
+
     </div>
 
     </section>
   
-  <section id="contacto">
-  <ul>
+  <section id="secciondatos"> <!--agrupar imagen con su texto--> 
+<ul class="listadatos">
+
     <img src="img/Ubicacion.png" alt="ubicación" >
 <li> Localidad <p> calle-provincia  </p></li>
+
     <img src="img/telefono.png" alt="telefono">
 <li> Teléfono <p> número de teléfono  </p> </li>
+
     <img src="img/Correo.png" alt="telefono">
 <li>Correo Electrónico <p> dirección de correo  </p></li>
   </ul>
 
-<p> <img src="img/logo.jpg"></p>
+ <img src="img/logo.jpg" id="logodatos">
   </section>
 
-  <hr>
-<footer class="navegador1yfooter">
 
-  <div class="sinsubrayar"><a href=""><i class="fab fa-facebook"></i></a> <a href="" ><i class="fab fa-instagram"></i></a> </div>
+<footer>
+<div id="redessociales">
+   <a href=""><i class="fab fa-facebook"></i></a>
+   <a href="" ><i class="fab fa-instagram"></i></a> 
+</div>
   Todos los derechos reservados Front End 
 </footer>
+
 </body>   
 </html>
