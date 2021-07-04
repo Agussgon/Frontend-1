@@ -2,6 +2,7 @@
 
 
 *{font-family: 'Roboto', sans-serif;}
+
 /*body no */
 #contenedor{
 background-color: #E5E5E5;
@@ -45,6 +46,8 @@ justify-content:space-around;
 align-items:center;
 
 } 
+/*contenedordelmain*/
+.contenedorprincipal{display: flex;border:red dashed;flex-direction: row; justify-content: center;}
 
 /*main*/
 
@@ -55,11 +58,10 @@ h2{color:red;text-align: center;}
 
 .principal{ display:flex;
     justify-content:space-between;
-    margin-top:40px; 
-    margin-left: 350px;
-    width:1000px; /*importante fijar medidas del contenedor*/
+     width:1000px; /*importante fijar medidas del contenedor*/
     height:350px ;
     background-color: #E5E5E5;
+    border: red dashed;
    
 
 }

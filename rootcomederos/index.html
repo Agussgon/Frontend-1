@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
      <head> <meta charset=UTF-8> 
+            <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+            <meta name="viewport" content="width=device-width, initial-scale=1">
             <title>Comederos </title>
             <link rel="stylesheet" href="CSS/style.css">
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
@@ -21,7 +23,7 @@
 
     <div class="menusuperior">
        
-       <img src="img/logo.jpg" alt="logo perros" id="logoperro"> 
+       <img src="img/Logo@2x.png" alt="logo perros" class="logoperro"> 
 
        <nav id="navegadorsuperior"> 
          <a href="#" > <i class="fas fa-paw" ></i>Categorías</a>
@@ -35,21 +37,22 @@
         </header> 
 
         <section id="seccion-principal">
-        <img src="img/comederoorginal.png" alt="comoderodeperros" id="imagencomedero">  
-      <div class="textocomedero">
+        <div class="textocomedero">
        <h2>¡Es un placer tenerte aqui!</h2>
        <p>¡Comederos en descuento!</p>
-       <p> <button>COMEDEROS </button> </p>
+       <p> <a>COMEDEROS </a> </p>
        </div>
        </section>
+       
 
-  <section id="seccionproductos">
+  <section >
+    <header id="encabezadoproductos">
     <img src="img/huellita original.png" alt="huella" id="huellita" >
     <div >
     <h1  >Productos destacados</h1>
        <span id="productos">comederos - accesorios - comida</span>
       </div>
-
+    </header>
 
   <div id="juguetesperrunos"> 
 
@@ -61,40 +64,55 @@
 
    <article class="juguete"> <img src="Img/imagenhuesos.png" alt="huesos" > 
       <p>Juguete Huesitos</p>
-      <p>$150</p></article>
+      <p class="precio">$150</p></article>
 
     <article class="juguete"> 
       <img src="Img/carne.png" alt="churrasquito" > 
       <p>Juguete Churrasquito</p>
-      <p>$150</p> </article>
+      <p class="precio">$150</p> </article>
 
     </div>
 
     </section>
-  
+
+    <article class="formulario"> 
+      <h3>Contactanos</h3>
+      <div> Nombre y apellido </div>
+      <div> Ingresa tu correo</div>
+      <div>Telefono</div>
+      <section class="opciones"> 
+        <a href="" id="Resetear">Resetear</a><a href="" id="Enviar">Enviar</a>
+      
+      </section>
+     </article>
+
+  <header id="encabezadodatos">
+  <h3>Suscríbite para más novedades</h3>
+   <a href="" id="suscribirse"> <input> </input>Suscribirse</a>
+</header>
   <section id="secciondatos"> <!--agrupar imagen con su texto--> 
-<ul class="listadatos">
 
-    <img src="img/Ubicacion.png" alt="ubicación" >
-<li> Localidad <p> calle-provincia  </p></li>
+    <ul class="listadatos">
+   
+<li > <img src="img/Location(1)(1).png" alt="ubicación" > Localidad <p> calle-provincia  </p></li>
 
-    <img src="img/telefono.png" alt="telefono">
-<li> Teléfono <p> número de teléfono  </p> </li>
-
-    <img src="img/Correo.png" alt="telefono">
-<li>Correo Electrónico <p> dirección de correo  </p></li>
+<li > <img src="img/Phone(1).png" alt="telefono">Teléfono <p> número de teléfono  </p> </li>
+   
+<li > <img src="img/Correo(1)(1).png" alt="telefono">Correo Electrónico <p> dirección de correo  </p></li>
   </ul>
 
- <img src="img/logo.jpg" id="logodatos">
+ <img src="img/Logo.png" id="logodatos">
   </section>
 
 
+
 <footer>
-<div id="redessociales">
+  Todos los derechos reservados Front End 
+<div class="redessociales">
    <a href=""><i class="fab fa-facebook"></i></a>
    <a href="" ><i class="fab fa-instagram"></i></a> 
 </div>
-  Todos los derechos reservados Front End 
+  
 </footer>
 
 </body>   

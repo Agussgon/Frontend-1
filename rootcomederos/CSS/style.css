@@ -1,8 +1,11 @@
 
-/*ver que asa con el ancho del body en general*/
-body {color:#FFFFFF;
+
+*{color:#FFFFFF;
       font-family:; /*ver si puedo traer la fuente roboto de googlefonts */
-      font-style:normal; }
+      font-style:normal; 
+    margin:0;
+    padding:0;}
+
       
 a{ text-decoration: none; color:RGB(255,255,255);}      
 
@@ -11,12 +14,13 @@ a{ text-decoration: none; color:RGB(255,255,255);}
 .ofertas{background-color:#222222;
     display:flex;
     justify-content:space-between;
+    flex-grow:0.1;
     
 }
-#tituloheader{flex-grow:0.7;
-text-align: center;}
+#tituloheader{flex-grow:0.4;
+text-align:center;}
 
-.monedaidioma{ flex: grow:0.4;;
+.monedaidioma{ flex-grow:0.4;;
 text-align: center;
 }
 
@@ -27,17 +31,18 @@ text-align: center;
 .menusuperior{background-color:#F0A83E;
     display: flex;
     flex-direction: row;
-   
+    width:100vw;/* */
     height: 70px;
     box-sizing: border-box;
     justify-content: space-between;
+    align-items: center;
+    
 }
-   }
-#logoperro{flex-direction: row ; flex-grow:0.5;}
+   
+.logoperro{padding:5vw;width:15vw;}
 
 
-#navegadorsuperior{
-flex-grow:0.3;
+#navegadorsuperior{ flex-grow:0.4;
 display: flex;
 flex-direction: row;
 justify-content:space-around;
@@ -47,51 +52,93 @@ justify-content:space-around;
 
 
 
-h1,h2,h3, #seccion-principal p, #seccionproductos {color:#3C2313;
+h1,h2,h3, #seccion-principal p, #seccionproductos, #productos, .juguete p{color:#3C2313;
     text-align:center;} 
 
 /*seccion comedero*/    
 #seccion-principal{
-    height: 600px;
-    width: auto;
+    height:80vh;
+    width: ;//* */
     box-sizing: border-box;
+    border:red dashed;
+    background-image:url('../img/comedero.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed; 
+    display:flex; justify-content:flex-end;align-items:center;
    
+
 }
-#imagencomedero{position:relative; 
+/*#imagencomedero{position:absolute; 
 z-index:-2 ;
-height:600px ;
-width: 100%;}
+height:80vh ;
+width:100vw ;} /* */
 
-.textocomedero{ text-align: center;z-index:4; position:relative; left:500px ; bottom:500px ; }
-
-
+.textocomedero{padding:10vh 10vw 30vh ; font-size: 150%;}
+.textocomedero h2{background-color:#fffdf8; border-radius: 2vh;}
+.textocomedero p a{ background-color:#F0A83E; border-radius: 1vh; }
 
 /*seccionproductos*/
+
+#encabezadoproductos{ margin:10vh 0vw;border: green dashed;display:flex;flex-direction:column;align-items: center;justify-content: space-around;}
 #productos{word-spacing:30px;} /*espaciado */
-#huellita{ width:200px; height:200px;}
+#huellita{ width:15vw; height:20vh;padding-top:10vh}
 
 
 
 /*juguetes 3div*/
 
 #juguetesperrunos{background-color:#fffdf8;display: flex; flex-direction: row;
-justify-content: space-around;}
+justify-content: space-around;border:red dashed;}
 
-.juguete{background-color:#FBFAF6 ;}
+.juguete {background-color:#FBFAF6; border: red dashed; display: flex;flex-direction:column;justify-content: space-around;}
+p .precio  {text-decoration:none; text-transform:none; color:#F0A83E;
+} /*no funciona poner color naranja solo al precio*/
 
+
+
+
+/*formulario de contacto  importante:las medidas*/
+.formulario{margin:10vh 0vw;display: flex; flex-direction: column; align-items: center;box-sizing:border-box;justify-content: space-around; }
+.formulario div{border: #3C2313;border-radius:3vw; background-color:#3C2313; width:20vw;height:2vh;margin:2vh 0px;padding:2vh 3vw;}
+.opciones{display:flex;flex-direction:row;justify-content: space-between;width:20vw; }
+#Resetear{background-color:#8A8787;border-radius:1vw;padding:2vh 3vw ;}
+#Enviar{background-color:#F0A83E;border-radius:1vw;padding:2vh 3vw;}
 
 /*datos*/
+#encabezadodatos{height:7vh; background-color:#F0A83E;display:flex;justify-content: space-between;align-items: center;}
+#suscribirse{}
+
 #secciondatos{background-color:#3C2313;display: flex; justify-content: space-between;}
 .listadatos{ display: flex; flex-direction:column; justify-content: space-around;}
 #logodatos{ align-self:center;} /*importante*/
-
-
+.listadatos li{display: flex;flex-direction: row; margin:2vh;}
+ 
 /*footer*/
-footer{background-color: #222222;}
-#redessociales{display: flex; flex-direction: row; justify-content:flex-end;}
+footer{background-color: #222222;display: flex; flex-direction: row; justify-content:space-between;align-content: center; }
+.redessociales a{ }
 
 
-/*logos de redes e idioma del footer?? */
-#redessociales a{text-decoration: none; color:RGB(0,0,0);line-height: 120%;}
+body{ display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position:absolute;
+    box-sizing: border-box;}
 
+    @media (max-width:600px) {body{flex-wrap: wrap;}
+    .logoperro{padding:5vw;width:40vw;}
+    #navegadorsuperior{display:none;}
+    #seccion-principal{flex-direction:column;justify-content:flex-start;align-content: flex-start;}
+    #juguetesperrunos {display: flex; flex-direction: column;
+        justify-content: space-around;border:blue dashed;}
+    .formulario{margin-top:30vh;display: flex; flex-direction: column; justify-content: space-around;flex-wrap: wrap; }
+    .formulario div{width:50vw;}
+    .opciones{margin-top:10vh;width:40vw; } 
+
+    #encabezadodatos{flex-direction:column;justify-content: space-between;align-items:flex-start;}
+    #secciondatos{flex-direction:column-reverse; align-content: center; }
+    .listadatos li { } /*no logro que se centren las tres y tener en cuenta min-width y wrap*/
+        
+
+    } 
 
