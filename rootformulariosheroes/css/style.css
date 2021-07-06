@@ -1,0 +1,11 @@
+*{margin:0;}
+
+body{display: flex;
+    flex-direction: column;
+}
+main{ height: 80vh;
+    border: red dashed;
+   }
+
+.formulariodecontacto{ display: flex; flex-direction: column;
+    justify-content: space-around;}
