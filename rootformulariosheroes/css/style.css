@@ -2,10 +2,45 @@
 
 body{display: flex;
     flex-direction: column;
+    justify-content: space-around;    
 }
-main{ height: 80vh;
-    border: red dashed;
-   }
 
-.formulariodecontacto{ display: flex; flex-direction: column;
-    justify-content: space-around;}
+header{display: flex;flex-direction: column;
+}
+#header1{background-color: rgb(18, 126, 54);height:5vh;}
+#header2{background-color:rgb(3, 17, 138);height:10vh;
+    display:flex;justify-content:flex-start;}
+
+
+
+main{ height: 80vh;
+    border: red dashed; 
+background-color: cadetblue;padding-top:10vh;}
+
+ .titulodelformulario{padding-bottom:5vh}
+
+.formulariodecontacto{ 
+    height:70vh;
+    width:vw;/*si agrego width anula a-i*/
+    display: flex;
+     flex-direction: column;
+     justify-content:center;
+     align-items: center;
+     background-color: cornsilk;
+    }
+
+form{ height:40vh; display: flex; flex-direction: column; justify-content: space-around;}
+
+footer{height: 5vh; display: flex; justify-content: center;align-items: center;}    
+/*el formulario como un bloque único separado de h2*/
+
+@media (max-width:500px){ .formulariodecontacto{justify-content: flex-start;
+    background-color: darkcyan;} 
+    footer{justify-content: flex-start;font-size:80%;} 
+    
+}
+
+@media (max-width:900px){
+    .formulariodecontacto{justify-content:flex-end;
+        background-color: black;} 
+}
