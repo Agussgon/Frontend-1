@@ -57,7 +57,7 @@ h1,h2,h3, #seccion-principal p, #seccionproductos, #productos, .juguete p{color:
 
 /*seccion comedero*/    
 #seccion-principal{
-    height:80vh;
+    height:70vh;
     width: ;//* */
     box-sizing: border-box;
     border:red dashed;
@@ -125,14 +125,20 @@ body{ display: flex;
     position:absolute;
     box-sizing: border-box;}
 
-    @media (max-width:600px) {body{flex-wrap: wrap;}
+    @media (max-width:800px) {body{flex-wrap: wrap;}
     .logoperro{padding:5vw;width:40vw;}
-    #navegadorsuperior{display:none;}
-    #seccion-principal{flex-direction:column;justify-content:flex-start;align-content: flex-start;}
+    #navegadorsuperior, .ofertas{display:none;}
+
+    #seccion-principal{flex-direction:column;justify-content:center;height:40vh}
+.textocomedero{}
+    #huellita{width:20vw;height:10vh;}
+
     #juguetesperrunos {display: flex; flex-direction: column;
-        justify-content: space-around;border:blue dashed;}
+        justify-content: space-around;align-items:center;border:rgb(29, 29, 97) dashed;}
+    .juguete{width:230px;margin-top:5vh;}    
+
     .formulario{margin-top:30vh;display: flex; flex-direction: column; justify-content: space-around;flex-wrap: wrap; }
-    .formulario div{width:50vw;}
+    .formulario div{width:50vw;border: red dashed;}
     .opciones{margin-top:10vh;width:40vw; } 
 
     #encabezadodatos{flex-direction:column;justify-content: space-between;align-items:flex-start;}
@@ -141,4 +147,6 @@ body{ display: flex;
         
 
     } 
+
+    
 
