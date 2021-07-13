@@ -12,7 +12,7 @@
  <body>
       <header> 
 
-      <div class="ofertas"> 
+      <div class="nav-top1"> 
     
           <span id="tituloheader"> Grandes ofertas en comederos </span>
 
@@ -21,7 +21,7 @@
       </div>  
            
 
-    <div class="menusuperior">
+    <div class="nav-top2">
        
        <img src="img/Logo@2x.png" alt="logo perros" class="logoperro"> 
 
@@ -75,20 +75,26 @@
 
     </section>
 
-    <article class="formulario"> 
-      <h3>Contactanos</h3>
-      <div> Nombre y apellido </div>
-      <div> Ingresa tu correo</div>
-      <div>Telefono</div>
-      <section class="opciones"> 
-        <a href="" id="Resetear">Resetear</a><a href="" id="Enviar">Enviar</a>
+    <article class="formulario">
+      <form action="" method="" class="formulario">
+        <fieldset> 
+      <legend><h3>Contactanos</h3></legend>
+     
+      <input type="text" name="nombre" id="nombre"  placeholder="Nombre y apellido"> 
+      <input type="email" name="email" id="email" placeholder= "Ingresa tu correo">
+      <input type="tel" name="telefono" id="telefono" placeholder= "Telefono">
       
+      <section class="opciones"> 
+        <button type="reset" id="reset">Resetear</button>
+        <button type="submit" id="submit">Enviar</button>
       </section>
+    </fieldset>
+      </form> 
      </article>
 
   <header id="encabezadodatos">
   <h3>Suscríbite para más novedades</h3>
-   <a href="" id="suscribirse"> <input> </input>Suscribirse</a>
+   <input type="email" name="email" id="email" placeholder="correo">
 </header>
   <section id="secciondatos"> <!--agrupar imagen con su texto--> 
 

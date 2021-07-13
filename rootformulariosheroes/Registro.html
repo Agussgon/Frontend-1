@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Registro</title>
+</head>
+<body>
+    <header id="nav-top">
+        <div id="nav-top1">
+            <p> 20% de descuento en todos los productos</p> 
+        </div>
+         <div  id="nav-top2"> <img src="img/ecom.png" alt="logo de la marca">  
+                      <h2>Heroes MP</h2>
+         </div>
+        
+    </header> 
+    <main>
+
+        <div class="formulariodecontacto">
+        
+        <form  action="/" method="" ><!-- a:ruta / m:get y post-->
+        <!--no lleva label en este caso,no usamos el id-->
+        <h1 class="titulodelformulario">Registro</h1>
+        <!--<label for="nombre">nombre:</label>--> 
+        <p><input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido"></p>
+        
+        <p><input type="email" name="email" id="email" placeholder="Correo Electrónico"></p>
+        
+        <p><input type="password" name="password" id="password" placeholder="Contraseña"> </p>
+        <p><select name="pais" id="pais">
+          <option value="">Argentina</option>
+          <option value="">Colombia</option>    
+        </select> </p>
+        
+        <div class="botones">
+        <input type="reset" value="Resetear" id="reset"> 
+        <input type="submit" value="Enviar" id="submit"> <!--o button type y se cierra la etiqueta-->  
+        </div>
+        <p class="ingresa">¿Ya tenés una cuenta? <a href="https://www.google.com.ar/">Ingresá</a></p>
+        </form>
+        </div>
+        </main>
+
+
+
+    <footer> Todos los derechos reservados a FRONT END 1</footer>
+    
+</body>
+</html>

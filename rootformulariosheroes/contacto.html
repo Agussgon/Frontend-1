@@ -6,23 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <div id="header1">
+<header id="nav-top">
+    <div id="nav-top1">
         <p> 20% de descuento en todos los productos</p> 
     </div>
-     <div  id="header2"> <img src="" alt="logo de la marca">  
-                  <h1>Heroes MP</h1>
+     <div  id="nav-top2"> <img src="img/ecom.png" alt="logo de la marca">  
+                  <h2>Heroes MP</h2>
      </div>
     
 </header> 
 <main>
 
 <div class="formulariodecontacto">
-<h2 class="titulodelformulario">Contacto</h2>
+
 <form  action="/" method="" ><!-- a:ruta / m:get y post-->
 <!--no lleva label en este caso,no usamos el id-->
+<h1 class="titulodelformulario">Contacto</h1>
 <p><input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido"></p>
 
 <p><input type="email" name="email" id="email" placeholder="Correo electrónico"></p>
@@ -30,9 +34,9 @@
 <textarea name="comentario" id="comentario"> 
 </textarea>
 
-<div >
-<input type="reset" value="Resetear" > 
-<input type="submit" value="Enviar" > <!--o button type y se cierra la etiqueta-->  
+<div class="botones">
+<input type="reset" value="Resetear" id="reset"> 
+<input type="submit" value="Enviar" id="submit"> <!--o button type y se cierra la etiqueta-->  
 
 </div>
 </form>

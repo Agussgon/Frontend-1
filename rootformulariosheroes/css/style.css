@@ -1,46 +1,191 @@
-*{margin:0;}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+*{margin:0;
+  font-family: 'Roboto', sans-serif;
+box-sizing: border-box;}
 
 body{display: flex;
     flex-direction: column;
     justify-content: space-around;    
 }
 
-header{display: flex;flex-direction: column;
+#nav-top{display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    
 }
-#header1{background-color: rgb(18, 126, 54);height:5vh;}
-#header2{background-color:rgb(3, 17, 138);height:10vh;
-    display:flex;justify-content:flex-start;}
+#nav-top1{background: #1CD1B0;
+          height:5vh;display: flex;
+          align-items: center;
+          
+          
+        }
+#nav-top2{ background: #00669F;
+    height:10vh;
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    color:#FFFFFF;
+}
+
 
 
 
 main{ height: 80vh;
-    border: red dashed; 
-background-color: cadetblue;padding-top:10vh;}
+     padding-top:10vh;
+    display: flex;
+justify-content: center;
+border: red dashed;}
 
- .titulodelformulario{padding-bottom:5vh}
+ h1{padding-bottom:2vh;
+    font-size:4rem;
+  font-weight:bolder;
+  font-family: 'Inter', sans-serif;}
 
+/*contenedor card de añaditusuper*/
+#contenedor{display: flex;
+justify-content: center;
+align-content: flex-start;
+margin:5vh;}
+.card{
+    display: flex;
+flex-flow: column;
+align-items: center;
+justify-content: flex-start;
+background-color: #00669F;
+width:50vw;
+height:100vh ;
+border-radius:10vw;} 
+
+.form-añadi{display: flex;
+    flex-direction:row;
+}
+.form-añadi1{display: flex;
+flex-direction:column;}
+
+/*boton de añadir super*/
+#añadi{
+width:100%;    
+}
+
+/*formularios contacto,login y registro*/  
 .formulariodecontacto{ 
     height:70vh;
-    width:vw;/*si agrego width anula a-i*/
+    width:40vw;/*si agrego width anula a-i*/
     display: flex;
      flex-direction: column;
      justify-content:center;
-     align-items: center;
-     background-color: cornsilk;
-    }
+     align-items:center;
+     
+     
+     /*border: red dashed;*/
+     }
 
-form{ height:40vh; display: flex; flex-direction: column; justify-content: space-around;}
+/*input form*/     
+#especie,#nombre,#email,#comentario,#password, #pais{ width:20vw;
+    margin:1vh;height: 5vh; border-style:solid; 
+font-weight: bolder;}
 
-footer{height: 5vh; display: flex; justify-content: center;align-items: center;}    
-/*el formulario como un bloque único separado de h2*/
+#comentario{height:25vh ;}
 
-@media (max-width:500px){ .formulariodecontacto{justify-content: flex-start;
-    background-color: darkcyan;} 
-    footer{justify-content: flex-start;font-size:80%;} 
+div .botones{display: flex;
+    justify-content:space-around;
+    margin-top:2vh;
+    
     
 }
 
-@media (max-width:900px){
-    .formulariodecontacto{justify-content:flex-end;
-        background-color: black;} 
+/*button*/
+
+#submit{background-color:#1CD1B0 ;
+    height:5vh;
+    width:10vw;
+    border-radius: 40vh;
+    font-family: 'Inter', sans-serif;
+    font-size:1rem;
+border-style: hidden;}
+#reset{background-color:#888888;
+    height:5vh;
+    width:10vw; 
+    border-radius: 40vh;
+    font-family: 'Inter', sans-serif;
+    font-size:1rem;
+    color:#FFFFFF;
+    border-style: hidden;}
+   
+#Entrar{background-color:#1CD1B0 ;
+        height:5vh;
+        width:100%;
+        border-radius: 40vh;
+        font-family: 'Inter', sans-serif;
+        font-size:1rem;
+    border-style: hidden;
+margin-top:2vh;}    
+    
+/*links login, registro*/
+
+ .ingresa a{text-decoration:none;margin-left:2%}
+
+p.ingresa{display:flex;justify-content: center;margin-top:5%;}   
+
+
+footer{height: 5vh; display: flex;
+     justify-content: center;
+     align-items: center;
+     background: #00669F;
+     color:#FFFFFF;}    
+
+
+
+/*responsive movil*/
+@media (max-width:500px)
+{ main{ 
+    width:80vw;
+    display: flex;
+   flex-direction: row;
+   justify-content:center;}
+    
+    .formulariodecontacto
+    {justify-content: flex-start;
+        width:80vw;
+    } 
+    #nombre,#email,#comentario{ width:70vw;}
+    h1{font-size: 3rem;}
+    footer{justify-content: flex-start;
+        font-size:80%;
+        } 
+    #submit, #reset{height: auto;width: auto;}
+    
 }
+
+/*responsive tablet incompleto*/
+@media (min-width:700px) and (max-width:1000px){
+    .formulariodecontacto{ width:100%;
+        }
+         #nombre,#email,#comentario{ width:80vw;}
+}
+
+
+
+/*pseudo clases y elementos */
+
+
+p::before
+{content:"*";
+color:red; 
+display: inline-block;
+padding-left:vw;
+font-size: 30px;
+visibility: hidden;}
+
+p:hover::before{
+    visibility:visible;
+}
+p::selection {
+    background-color: red;
+}
+
+
+
+    

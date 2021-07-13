@@ -9,9 +9,9 @@
       
 a{ text-decoration: none; color:RGB(255,255,255);}      
 
-/*header*/
+/*header 1*/
 
-.ofertas{background-color:#222222;
+.nav-top1{background-color:#222222;
     display:flex;
     justify-content:space-between;
     flex-grow:0.1;
@@ -26,9 +26,9 @@ text-align: center;
 
 
 
-/*segunda parte del header*/
+/*header 2*/
 
-.menusuperior{background-color:#F0A83E;
+.nav-top2{background-color:#F0A83E;
     display: flex;
     flex-direction: row;
     width:100vw;/* */
@@ -99,17 +99,24 @@ p .precio  {text-decoration:none; text-transform:none; color:#F0A83E;
 
 
 /*formulario de contacto  importante:las medidas*/
-.formulario{margin:10vh 0vw;display: flex; flex-direction: column; align-items: center;box-sizing:border-box;justify-content: space-around; }
-.formulario div{border: #3C2313;border-radius:3vw; background-color:#3C2313; width:20vw;height:2vh;margin:2vh 0px;padding:2vh 3vw;}
+.formulario{margin:10vh 0vw;
+    display: flex; flex-direction: column;
+     align-items: center;box-sizing:border-box;
+     justify-content: space-around; }
+.formulario input{border: #3C2313;border-radius:3vw; background-color:#3C2313; width:20vw;height:2vh;margin:2vh 0px;padding:2vh 3vw;}
 .opciones{display:flex;flex-direction:row;justify-content: space-between;width:20vw; }
-#Resetear{background-color:#8A8787;border-radius:1vw;padding:2vh 3vw ;}
-#Enviar{background-color:#F0A83E;border-radius:1vw;padding:2vh 3vw;}
+input{display: block;}
+#reset{background-color:#8A8787;border-radius:1vw;padding:2vh 3vw ;}
+#submit{background-color:#F0A83E;border-radius:1vw;padding:2vh 3vw;}
 
-/*datos*/
+
+/*novedades*/
 #encabezadodatos{height:7vh; background-color:#F0A83E;display:flex;justify-content: space-between;align-items: center;}
-#suscribirse{}
+#email{height:2vh;width:20vw;}
 
-#secciondatos{background-color:#3C2313;display: flex; justify-content: space-between;}
+#secciondatos{background-color:#3C2313;
+    display: flex; 
+    justify-content: space-between;}
 .listadatos{ display: flex; flex-direction:column; justify-content: space-around;}
 #logodatos{ align-self:center;} /*importante*/
 .listadatos li{display: flex;flex-direction: row; margin:2vh;}

@@ -4,11 +4,7 @@
 *{font-family: 'Roboto', sans-serif;}
 
 /*body no */
-#contenedor{
-background-color: #E5E5E5;
-display:flex;
-flex-direction: column;
-justify-content: space-around;}
+
 
 
 
@@ -47,7 +43,15 @@ align-items:center;
 
 } 
 /*contenedordelmain*/
-.contenedorprincipal{display: flex;border:red dashed;flex-direction: row; justify-content: center;}
+
+.contenedorprincipal{display: flex;
+    /*border:red dashed;*/
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    margin-top:15vh;
+    
+}
 
 /*main*/
 
@@ -61,7 +65,8 @@ h2{color:red;text-align: center;}
      width:1000px; /*importante fijar medidas del contenedor*/
     height:350px ;
     background-color: #E5E5E5;
-    border: red dashed;
+    /*border: red dashed;*/
+   
    
 
 }
