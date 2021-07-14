@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
+    <title>Ejercicio</title>
+</head> 
+<body>
+    <header>
+        <div>
+            <img src="img/VectorPizza.svg" alt="Logo de la pizzeria: Pizza & Front">
+            <h1>Pizza<span class="text_white">&</span><span class="text_red">Front</span></h1>
+        </div>
+        <nav>
+            <ul type="none">
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#">Ranking</a></li>
+                <li><a href="#">Promoción</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+    <fieldset>
+        <legend>Dejanos tus datos</legend>
+    <form action="" method="">
+    <input type="text" name="nombre" id="nombre" placeholder="Nombre" disabled="disabled"> 
+    <input type="email" name="mail" id="mail" placeholder="correo" required>
+    <input type="date" name="fecha" value="2021/05/07" min="2020/03/10" ><!--no funciona-->
+    <input type="file" accept=".jpg,.png"> 
+    <select name="gustos de pizzas">
+    <optgroup label= "ingredientes">
+        <option value="tomate">Tomate</option>
+        <option value="queso">Queso</option>
+    </optgroup> 
+    <optgroup label="condimentos">
+        <option value="sal" selected>sal</option>
+        <option value="oregano">oregano</option>
+    </optgroup>   
+    </select>
+    <br>
+    <input type="radio" name="quiere" value="si" id="si"checked >
+    <label for si>Si</label>
+    <input type="radio" name="quiere" value="no" id="no">
+    <label for no>No</label>
+    <div>
+    <input type="submit" value="enviar">    
+    <a href="#home">ir a home</a>    
+</div>
+    </form>
+     </fieldset>       
+    
+    </div>
+    <section>
+        <article class="img">
+            <img src="img/delivery.jpg" alt="">
+            <h1>Envio gratis <span>comprando</span> dos pizzas</h1>
+        </article>
+        <article class="text">
+            <h2>Podio de pizzas</h2>
+            <p>Pizzas top 5</p>
+            <div>
+            <ol>
+                <li>Muzzarella</li>
+                <li>Hawaiana</li>
+                <li>Muzzarella J&Morron</li>
+                <li>Fugazzeta</li>
+                <li>Calabresa</li>
+            </ol>
+            <img src="img/PizzaFalling.jpg" alt="pizza">
+            </div>
+        </article>
+    </section>
+    <footer>
+        <div class="text"> 
+            <ul type="none">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Ranking</a></li>
+                <li><a href="#">Promoción</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+        
+    
+        <div class="logo">
+            <img src="img/VectorPizza.svg" alt="Logo de la pizzeria: Pizza & Front">
+            <h2>Pizza<span class="text_white">&</span><span class="text_red">Front</span></h2>
+        </div>
+    </footer>
+</body>
+</html>
