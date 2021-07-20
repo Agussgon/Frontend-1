@@ -47,7 +47,7 @@ nav ul li a{
     text-decoration: none;
 }
 
-nav ul li a:before{
+nav ul li a::before{
     content:'';
     background: var(--decoration-color);
     position:absolute;
@@ -61,6 +61,7 @@ nav ul li a:hover::before{
 
     width:100%;
 }
+
 
 
 /* Barra redes */
@@ -106,6 +107,23 @@ nav ul li a:hover::before{
     margin-top: 10px;
     text-align: justify;
 }
+/*.container:hover {
+   display:flex ;
+   flex-direction: row;
+   justify-content:center;
+   align-content: space-around;
+   flex-wrap: wrap;
+} */
+.container p:nth-child(odd):hover{
+    
+    background-color: aquamarine;
+    width:50vw;
+}
+.container p:nth-child(even):hover{
+    background-color:rebeccapurple;
+    width:50vw;
+}
+
 .container a{
     display: inline-block;
     background-color:var(--primary-color);
@@ -116,16 +134,17 @@ nav ul li a:hover::before{
 }
 .container a:hover{
     color:var(--decoration-color);
+   
 }
+
 
  
 /*.container a:hover::after
-{content:url("/img/terminator.jpg");
- width:10%;
- height:5%;
- border-radius: 50%;  
-  /*falta aclarar medidas consultar*/}*/
+{content:url("/clase_19_mesa/img/terminator.jpg") ;
+ visibility:visible;
+  /*falta aclarar medidas consultar*/
  
+
 
 /* spinner| */
 .spinner{
@@ -145,7 +164,7 @@ nav ul li a:hover::before{
     border-left: 10px solid rgba(66,139,202,.2);
      /* animation: ; */
      animation:spinner 120ms infinite; /*duration count name*/
-     
+    
  }
 /* keyframes
     crear la animación con la rotación desde el momento 0 y momento 100
